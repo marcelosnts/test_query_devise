@@ -1,1 +1,18 @@
-<div>Hello World</div>
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Area</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @users.each do |user| %>
+                <tr>
+                    <td><%= user.email %></td>
+                    <td><%= user.area.name %></td>
+                </tr>
+            <% end %>
+        </tbody>
+</table>
+</div>
